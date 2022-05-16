@@ -6,12 +6,18 @@ The code is inherited from [PreSumm](https://github.com/nlpyang/PreSumm).
 We add the implenmentation of document reordering. 
 Please refer to PreSumm for the implementation of data pre-processing, summarization, and evaluation.
 
+
+
+
+### Step 1. Data Preporation
+
+Set up the dataset name
 ```shell script
 dataset_name=multinews
 ```
 
+Follow the PreSumm format to prepare for the json data. We provide toy examples under `json_data2/multinews`.
 
-### Step 1 Data Preporation
 
 Convert the json format data to torch format, which will be used as the input of BERT. Files are saved to `bert_data2/multinews_doc_cls/`.
 
@@ -21,7 +27,7 @@ python preprocess.py -mode format_to_bert_doc -raw_path ../json_data2/${dataset_
         -n_cpus 10 -log_file ../logs/multinews.log -min_src_nsents 1 -doc_separator "unused0"
 ```
 
-### Step 2 Model Training
+### Step 2. Model Training
 Train a documents-level reordering model
 
 ```shell script
@@ -35,7 +41,7 @@ python train.py -task ext -mode train_doc -bert_data_path ../bert_data2/${datase
 ```
 
 
-### Step 3 Model Test
+### Step 3. Model Test
 Run the trained model on MDS dataset to evaluate the importance of each document
 ```shell script
 splits=( "train" "valid" "test" )
