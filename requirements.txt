@@ -1,0 +1,8 @@
+torch==1.8.1
+pytorch_transformers==1.2.0
+multiprocess==0.70.12.2
+rouge_score==0.0.4
+numpy==1.19.5
+tqdm==4.49.0
+wandb==0.10.32
+tensorboardX==2.5
