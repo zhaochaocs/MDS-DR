@@ -3,13 +3,13 @@
 This is the codebase of our ACL22 Findings Paper [Read Top News First: A Document Reordering Approach for Multi-Document News Summarization](https://arxiv.org/abs/2203.10254)
 
 The code is inherited from [PreSumm](https://github.com/nlpyang/PreSumm). 
-We add the implenmentation of document reordering. 
+We add the implementation of document reordering. 
 Please refer to PreSumm for the implementation of data pre-processing, summarization, and evaluation.
 
 
 
 
-### Step 1. Data Preporation
+### Step 1. Data Preparation
 
 Set up the dataset name
 ```shell script
@@ -28,7 +28,7 @@ python preprocess.py -mode format_to_bert_doc -raw_path ../json_data2/${dataset_
 ```
 
 ### Step 2. Model Training
-Train a documents-level reordering model
+Train a documents-level reordering model.
 
 ```shell script
 dataset_name=multinews_doc_cls
@@ -42,7 +42,7 @@ python train.py -task ext -mode train_doc -bert_data_path ../bert_data2/${datase
 
 
 ### Step 3. Model Test
-Run the trained model on MDS dataset to evaluate the importance of each document
+Run the trained model on MDS dataset to evaluate the importance of each document.
 ```shell script
 splits=( "train" "valid" "test" )
 for split in "${splits[@]}"
