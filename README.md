@@ -1,6 +1,6 @@
 ## MDS-DR
 
-This is the codebase of our ACL22 Findings Paper [Read Top News First: A Document Reordering Approach for Multi-Document News Summarization](https://arxiv.org/abs/2203.10254)
+This is the codebase of our ACL22 Findings Paper [Read Top News First: A Document Reordering Approach for Multi-Document News Summarization](https://aclanthology.org/2022.findings-acl.51/)
 
 The code is inherited from [PreSumm](https://github.com/nlpyang/PreSumm). 
 We add the implementation of document reordering. 
@@ -55,3 +55,24 @@ python train.py  -task ext -mode test_doc -input ${split} -batch_size 1000 -test
 done
 ```
 
+### Citation 
+
+```bibtex
+@inproceedings{zhao-etal-2022-read,
+    title = "Read Top News First: A Document Reordering Approach for Multi-Document News Summarization",
+    author = "Zhao, Chao  and
+      Huang, Tenghao  and
+      Basu Roy Chowdhury, Somnath  and
+      Chandrasekaran, Muthu Kumar  and
+      McKeown, Kathleen  and
+      Chaturvedi, Snigdha",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.51",
+    doi = "10.18653/v1/2022.findings-acl.51",
+    pages = "613--621",
+}
+```
