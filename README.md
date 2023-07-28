@@ -58,21 +58,11 @@ done
 ### Citation 
 
 ```bibtex
-@inproceedings{zhao-etal-2022-read,
-    title = "Read Top News First: A Document Reordering Approach for Multi-Document News Summarization",
-    author = "Zhao, Chao  and
-      Huang, Tenghao  and
-      Basu Roy Chowdhury, Somnath  and
-      Chandrasekaran, Muthu Kumar  and
-      McKeown, Kathleen  and
-      Chaturvedi, Snigdha",
-    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
-    month = may,
-    year = "2022",
-    address = "Dublin, Ireland",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.findings-acl.51",
-    doi = "10.18653/v1/2022.findings-acl.51",
-    pages = "613--621",
+@inproceedings{zhao2022read,
+  title={Read Top News First: A Document Reordering Approach for Multi-Document News Summarization},
+  author={Zhao, Chao and Huang, Tenghao and Chowdhury, Somnath Basu Roy and Chandrasekaran, Muthu Kumar and Mckeown, Kathleen and Chaturvedi, Snigdha},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2022},
+  pages={613--621},
+  year={2022}
 }
 ```
